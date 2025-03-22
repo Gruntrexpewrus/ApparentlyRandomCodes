@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- saved from url=(0166)http://127.0.0.1:8080/snakeviz/%2FUsers%2Fleonardoplacidi%2FDesktop%2FLOCALDEVELOPMENT%2FApparentlyRandomCodes%2FHPC_python%2Fprofiling_output%2Fprofile_numpy_nn.prof -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>profile_numpy_nn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="./profiling_output_prof_view_files/snakeviz.css" rel="stylesheet">
+<!-- DataTables CSS -->
+<link href="./profiling_output_prof_view_files/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+<body>
+<h1 id="snakeviz-text">
+<a href="https://jiffyclub.github.io/snakeviz/">SnakeViz</a>
+</h1>
+<!-- reset button -->
+<span id="resetbuttons">
+<div class="button-div">
+<button id="resetbutton-root" disabled="True">Reset Root</button>
+</div>
+<div class="button-div">
+<button id="resetbutton-zoom" disabled="True">Reset Zoom</button>
+</div>
+</span>
+<!-- style select -->
+<label id="sv-style-label">Style:&nbsp;
+<select name="sv-style" id="sv-style-select">
+<option value="icicle" selected="">Icicle</option>
+<option value="sunburst">Sunburst</option>
+</select>
+</label>
+<!-- depth select -->
+<label id="sv-depth-label">Depth:&nbsp;
+<select name="sv-depth" id="sv-depth-select">
+
+<option value="3">3</option>
+
+<option value="5">5</option>
+
+<option value="10" selected="">10</option>
+
+<option value="15">15</option>
+
+<option value="20">20</option>
+
+</select>
+</label>
+<!-- cutoff select -->
+<label id="sv-cutoff-label">Cutoff:
+<select name="sv-cutoff" id="sv-cutoff-select">
+<option value="0.001" selected="">1 ⁄ 1000</option>
+<option value="0.01">1 ⁄ 100</option>
+<option value="0">None</option>
+</select>
+</label>
+<!-- information div -->
+<div id="sv-info-div" class="sunburst" style="height: 574.8px; width: 515.524px; display: none;"><div class="sv-info-label">Name:</div>
+<div class="sv-info-item">&lt;method 'randn' of 'numpy.random.mtrand.RandomState' objects&gt;</div>
+<div class="sv-info-label">Cumulative Time:</div>
+<div class="sv-info-item">0.000442 s (2.77 %)</div>
+<div class="sv-info-label">File:</div>
+<div class="sv-info-item">~</div>
+<div class="sv-info-label">Line:</div>
+<div class="sv-info-item">0</div>
+<div class="sv-info-label">Directory:</div>
+<div class="sv-info-item"></div></div>
+<!-- call stack -->
+<div id="sv-call-stack">
+<div id="working-spinner" class="spinner" style="display: none;">
+<div class="bounce1"></div>
+<div class="bounce2"></div>
+<div class="bounce3"></div>
+</div>
+<div style="display: inline-block;">
+<button id="sv-call-stack-btn" class="btn-active">Call Stack</button>
+</div>
+<div id="sv-call-stack-list" style="max-height: 574.8px; display: block;"><div><span>0.&nbsp;</span><span>cProfile_advanced.py:20(train_numpy_nn)</span></div></div>
+</div>
+<!-- Error message -->
+<div id="sv-error-div" class="sv-error-msg" style="display: none;">
+<p>
+An error occurred processing your profile.
+You can try a lower depth, a larger cutoff,
+or try profiling a smaller portion of your code.
+If you continue to have problems you can
+<a href="https://github.com/jiffyclub/snakeviz/issues">
+contact us on GitHub</a>.
+</p>
+<div id="sv-error-close-div" class="sv-error-close">Close</div>
+</div>
+<!-- vis -->
+<div style="text-align: center;">
+<div id="chart" style="margin-left: auto; margin-right: auto;"><svg width="766.4000000000001" height="766.4000000000001"><g id="container" transform="translate(383.20000000000005,383.20000000000005)"><circle r="383.20000000000005" style="opacity: 0;"></circle><path id="path-0" d="M0,63.86666666666668A63.86666666666668,63.86666666666668 0 1,1 0,-63.86666666666668A63.86666666666668,63.86666666666668 0 1,1 0,63.86666666666668Z" fill-rule="evenodd" style="fill: rgb(49, 130, 189);"></path><path id="path-1" d="M-119.46064938302709,45.22120844725316A127.73333333333336,127.73333333333336 0 0,1 -121.10624764533694,-40.608881118676166L-60.55312382266847,-20.304440559338083A63.86666666666668,63.86666666666668 0 0,0 -59.730324691513545,22.61060422362658Z" fill-rule="evenodd" style="fill: rgb(107, 174, 214);"></path><path id="path-2" d="M-179.1909740745406,67.83181267087974A191.60000000000002,191.60000000000002 0 0,1 -189.40822271598816,-28.89784018868258L-126.27214847732544,-19.265226792455053A127.73333333333336,127.73333333333336 0 0,0 -119.46064938302709,45.22120844725316Z" fill-rule="evenodd" style="fill: rgb(158, 202, 225);"></path><path id="path-3" d="M-189.40822271598816,-28.89784018868258A191.60000000000002,191.60000000000002 0 0,1 -181.6593714680054,-60.91332167801424L-121.10624764533694,-40.608881118676166A127.73333333333336,127.73333333333336 0 0,0 -126.27214847732544,-19.265226792455053Z" fill-rule="evenodd" style="fill: rgb(107, 174, 214);"></path><path id="path-4" d="M-121.10624764533694,-40.608881118676166A127.73333333333336,127.73333333333336 0 0,1 -81.07943748633946,-98.70121205610002L-40.53971874316973,-49.35060602805001A63.86666666666668,63.86666666666668 0 0,0 -60.55312382266847,-20.304440559338083Z" fill-rule="evenodd" style="fill: rgb(198, 219, 239);"></path><path id="path-5" d="M-51.05726802491972,-117.08526733229917A127.73333333333336,127.73333333333336 0 0,1 -28.706380599628375,-124.46585137022014L-14.353190299814187,-62.23292568511007A63.86666666666668,63.86666666666668 0 0,0 -25.52863401245986,-58.542633666149584Z" fill-rule="evenodd" style="fill: rgb(230, 85, 13);"></path><path id="path-6" d="M-76.58590203737958,-175.62790099844872A191.60000000000002,191.60000000000002 0 0,1 -50.89527744683408,-184.71662278639081L-33.930184964556055,-123.14441519092722A127.73333333333336,127.73333333333336 0 0,0 -51.05726802491972,-117.08526733229917Z" fill-rule="evenodd" style="fill: rgb(253, 141, 60);"></path><path id="path-7" d="M-102.11453604983944,-234.17053466459834A255.46666666666673,255.46666666666673 0 0,1 -72.82675751680273,-244.86625158924335L-54.62006813760204,-183.6496886919325A191.60000000000002,191.60000000000002 0 0,0 -76.58590203737958,-175.62790099844872Z" fill-rule="evenodd" style="fill: rgb(253, 174, 107);"></path><path id="path-8" d="M-101.97931154802868,-302.61195910599423A319.33333333333337,319.33333333333337 0 0,1 -93.70986188491683,-305.2740401070612L-74.96788950793346,-244.219232085649A255.46666666666673,255.46666666666673 0 0,0 -81.58344923842296,-242.0895672847954Z" fill-rule="evenodd" style="fill: rgb(49, 163, 84);"></path><path id="path-9" d="M-127.6431700622993,-292.71316833074786A319.33333333333337,319.33333333333337 0 0,1 -114.739123182894,-298.00790491025316L-91.79129854631522,-238.40632392820254A255.46666666666673,255.46666666666673 0 0,0 -102.11453604983944,-234.17053466459834Z" fill-rule="evenodd" style="fill: rgb(116, 196, 118);"></path><path id="path-10" d="M-153.17180407475917,-351.25580199689745A383.20000000000005,383.20000000000005 0 0,1 -138.87308678866052,-357.15053656097064L-115.72757232388376,-297.6254471341422A319.33333333333337,319.33333333333337 0 0,0 -127.6431700622993,-292.71316833074786Z" fill-rule="evenodd" style="fill: rgb(116, 196, 118);"></path><path id="path-11" d="M-114.739123182894,-298.00790491025316A319.33333333333337,319.33333333333337 0 0,1 -101.97931154802868,-302.61195910599423L-81.58344923842296,-242.0895672847954A255.46666666666673,255.46666666666673 0 0,0 -91.79129854631522,-238.40632392820254Z" fill-rule="evenodd" style="fill: rgb(253, 174, 107);"></path><path id="path-12" d="M-72.82675751680273,-244.86625158924335A255.46666666666673,255.46666666666673 0 0,1 -67.86036992911211,-246.28883038185444L-50.89527744683408,-184.71662278639081A191.60000000000002,191.60000000000002 0 0,0 -54.62006813760204,-183.6496886919325Z" fill-rule="evenodd" style="fill: rgb(253, 141, 60);"></path><path id="path-13" d="M-50.89527744683408,-184.71662278639081A191.60000000000002,191.60000000000002 0 0,1 -43.30502332299736,-186.64199676116485L-28.87001554866491,-124.42799784077657A127.73333333333336,127.73333333333336 0 0,0 -33.930184964556055,-123.14441519092722Z" fill-rule="evenodd" style="fill: rgb(230, 85, 13);"></path><path id="path-14" d="M-6.709569142893844,-127.5569916796456A127.73333333333336,127.73333333333336 0 0,1 -1.0638782693142828,-127.72890278818076L-0.5319391346571414,-63.86445139409038A63.86666666666668,63.86666666666668 0 0,0 -3.354784571446922,-63.7784958398228Z" fill-rule="evenodd" style="fill: rgb(199, 233, 192);"></path><path id="path-15" d="M-81.07943748633946,-98.70121205610002A127.73333333333336,127.73333333333336 0 0,1 -51.05726802491972,-117.08526733229917L-25.52863401245986,-58.542633666149584A63.86666666666668,63.86666666666668 0 0,0 -40.53971874316973,-49.35060602805001Z" fill-rule="evenodd" style="fill: rgb(117, 107, 177);"></path><path id="path-16" d="M-121.61915622950917,-148.05181808415003A191.60000000000002,191.60000000000002 0 0,1 -80.73886972077709,-173.75786289032044L-53.82591314718473,-115.83857526021363A127.73333333333336,127.73333333333336 0 0,0 -81.07943748633946,-98.70121205610002Z" fill-rule="evenodd" style="fill: rgb(158, 154, 200);"></path><path id="path-17" d="M-111.03512256652591,-230.0748124728441A255.46666666666673,255.46666666666673 0 0,1 -108.08935350932433,-231.47334497888548L-81.06701513199323,-173.6050087341641A191.60000000000002,191.60000000000002 0 0,0 -83.27634192489442,-172.55610935463307Z" fill-rule="evenodd" style="fill: rgb(188, 189, 220);"></path><path id="path-18" d="M-162.15887497267892,-197.40242411220004A255.46666666666673,255.46666666666673 0 0,1 -118.10170577093852,-226.52859614576806L-88.57627932820388,-169.89644710932603A191.60000000000002,191.60000000000002 0 0,0 -121.61915622950917,-148.05181808415003Z" fill-rule="evenodd" style="fill: rgb(49, 163, 84);"></path><path id="path-19" d="M-118.10170577093852,-226.52859614576806A255.46666666666673,255.46666666666673 0 0,1 -111.03512256652591,-230.0748124728441L-83.27634192489442,-172.55610935463307A191.60000000000002,191.60000000000002 0 0,0 -88.57627932820388,-169.89644710932603Z" fill-rule="evenodd" style="fill: rgb(158, 154, 200);"></path><path id="path-20" d="M-80.73886972077709,-173.75786289032044A191.60000000000002,191.60000000000002 0 0,1 -76.96947565451684,-175.46013740296897L-51.312983769677906,-116.97342493531266A127.73333333333336,127.73333333333336 0 0,0 -53.82591314718473,-115.83857526021363Z" fill-rule="evenodd" style="fill: rgb(117, 107, 177);"></path><path id="path-21" d="M-1.0638782693142828,-127.72890278818076A127.73333333333336,127.73333333333336 0 0,1 -2.346423267166329e-14,-127.73333333333336L-1.1732116335831645e-14,-63.86666666666668A63.86666666666668,63.86666666666668 0 0,0 -0.5319391346571414,-63.86445139409038Z" fill-rule="evenodd" style="fill: rgb(218, 218, 235);"></path><path id="path-22" d="M-28.706380599628375,-124.46585137022014A127.73333333333336,127.73333333333336 0 0,1 -6.709569142893844,-127.5569916796456L-3.354784571446922,-63.7784958398228A63.86666666666668,63.86666666666668 0 0,0 -14.353190299814187,-62.23292568511007Z" fill-rule="evenodd" style="fill: rgb(99, 99, 99);"></path><path id="path-23" d="M7.82141089055443e-15,-127.73333333333336A127.73333333333336,127.73333333333336 0 1,1 -119.46064938302709,45.22120844725316L-59.730324691513545,22.61060422362658A63.86666666666668,63.86666666666668 0 1,0 3.910705445277215e-15,-63.86666666666668Z" fill-rule="evenodd" style="fill: rgb(49, 130, 189);"></path></g></svg></div>
+</div>
+<br>
+<!-- stats table -->
+<div id="table_div">
+<div id="pstats-table_wrapper" class="dataTables_wrapper no-footer"><div id="pstats-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="pstats-table"></label></div><table cellpadding="0" cellspacing="0" border="0" class="display dataTable no-footer" id="pstats-table" role="grid" aria-describedby="pstats-table_info" style="width: 1853px;">
+<thead>
+<tr role="row"><th title="Total number of calls to the function. If there are two numbers, that means the function recursed and the first is the total number of calls and the second is the number of primitive (non-recursive) calls." class="sorting" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-label="ncalls: activate to sort column ascending" style="width: 119px;">ncalls</th><th title="Total time spent in the function, not including time spent in calls to sub-functions." class="sorting_desc" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-sort="descending" aria-label="tottime: activate to sort column ascending" style="width: 139px;">tottime</th><th title="`tottime` divided by `ncalls`" class="sorting" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-label="percall: activate to sort column ascending" style="width: 138px;">percall</th><th title="Cumulative time spent in this function and all sub-functions." class="sorting" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-label="cumtime: activate to sort column ascending" style="width: 161px;">cumtime</th><th title="`cumtime` divided by `ncalls`" class="sorting" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-label="percall: activate to sort column ascending" style="width: 138px;">percall</th><th title="File name and line number were the function is defined, and the function’s name." class="sorting" tabindex="0" aria-controls="pstats-table" rowspan="1" colspan="1" aria-label="filename:lineno(function): activate to sort column ascending" style="width: 942px;">filename:lineno(function)</th></tr>
+</thead>
+<tbody><tr role="row" class="odd"><td class="">1</td><td class="sorting_1">0.01103</td><td class="">0.01103</td><td class="">0.01595</td><td class="">0.01595</td><td class="">cProfile_advanced.py:20(train_numpy_nn)</td></tr><tr role="row" class="even"><td class="">10</td><td class="sorting_1">0.001419</td><td class="">0.0001419</td><td class="">0.001419</td><td class="">0.0001419</td><td class="">cProfile_advanced.py:6(relu)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">0.001302</td><td class="">0.0001302</td><td class="">0.001302</td><td class="">0.0001302</td><td class="">~:0(&lt;method 'astype' of 'numpy.ndarray' objects&gt;)</td></tr><tr role="row" class="even"><td class="">30</td><td class="sorting_1">0.0005943</td><td class="">1.981e-05</td><td class="">0.0005943</td><td class="">1.981e-05</td><td class="">~:0(&lt;method 'reduce' of 'numpy.ufunc' objects&gt;)</td></tr><tr role="row" class="odd"><td class="">4</td><td class="sorting_1">0.0004416</td><td class="">0.0001104</td><td class="">0.0004416</td><td class="">0.0001104</td><td class="">~:0(&lt;method 'randn' of 'numpy.random.mtrand.RandomState' objects&gt;)</td></tr><tr role="row" class="even"><td class="">10</td><td class="sorting_1">0.0004366</td><td class="">4.366e-05</td><td class="">0.001738</td><td class="">0.0001738</td><td class="">cProfile_advanced.py:9(relu_deriv)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">0.0001122</td><td class="">1.122e-05</td><td class="">0.0001122</td><td class="">1.122e-05</td><td class="">cProfile_advanced.py:16(mse_deriv)</td></tr><tr role="row" class="even"><td class="">10</td><td class="sorting_1">0.0001077</td><td class="">1.077e-05</td><td class="">0.0003098</td><td class="">3.098e-05</td><td class="">_methods.py:101(_mean)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">0.0001037</td><td class="">1.037e-05</td><td class="">0.000468</td><td class="">4.68e-05</td><td class="">cProfile_advanced.py:13(mse)</td></tr><tr role="row" class="even"><td class="">10</td><td class="sorting_1">0.0001024</td><td class="">1.024e-05</td><td class="">0.0001108</td><td class="">1.108e-05</td><td class="">_methods.py:67(_count_reduce_items)</td></tr><tr role="row" class="odd"><td class="">20</td><td class="sorting_1">7.85e-05</td><td class="">3.925e-06</td><td class="">0.000641</td><td class="">3.205e-05</td><td class="">fromnumeric.py:71(_wrapreduction)</td></tr><tr role="row" class="even"><td class="">20</td><td class="sorting_1">5.475e-05</td><td class="">2.738e-06</td><td class="">0.0007013</td><td class="">3.506e-05</td><td class="">fromnumeric.py:2177(sum)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">5.129e-05</td><td class="">5.129e-06</td><td class="">0.000361</td><td class="">3.61e-05</td><td class="">fromnumeric.py:3385(mean)</td></tr><tr role="row" class="even"><td class="">20</td><td class="sorting_1">3.238e-05</td><td class="">1.619e-06</td><td class="">3.238e-05</td><td class="">1.619e-06</td><td class="">fromnumeric.py:72(&lt;dictcomp&gt;)</td></tr><tr role="row" class="odd"><td class="">1</td><td class="sorting_1">2.113e-05</td><td class="">2.113e-05</td><td class="">2.113e-05</td><td class="">2.113e-05</td><td class="">~:0(&lt;numpy.random.mtrand.seed&gt;)</td></tr><tr role="row" class="even"><td class="">30</td><td class="sorting_1">1.087e-05</td><td class="">3.625e-07</td><td class="">1.087e-05</td><td class="">3.625e-07</td><td class="">~:0(&lt;built-in method builtins.isinstance&gt;)</td></tr><tr role="row" class="odd"><td class="">20</td><td class="sorting_1">8.418e-06</td><td class="">4.209e-07</td><td class="">8.418e-06</td><td class="">4.209e-07</td><td class="">~:0(&lt;built-in method numpy.core._multiarray_umath.normalize_axis_index&gt;)</td></tr><tr role="row" class="even"><td class="">20</td><td class="sorting_1">7.209e-06</td><td class="">3.605e-07</td><td class="">7.209e-06</td><td class="">3.605e-07</td><td class="">fromnumeric.py:2172(_sum_dispatcher)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">6.624e-06</td><td class="">6.624e-07</td><td class="">6.624e-06</td><td class="">6.624e-07</td><td class="">~:0(&lt;built-in method builtins.hasattr&gt;)</td></tr><tr role="row" class="even"><td class="">20</td><td class="sorting_1">5.25e-06</td><td class="">2.625e-07</td><td class="">5.25e-06</td><td class="">2.625e-07</td><td class="">~:0(&lt;built-in method builtins.issubclass&gt;)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">5.001e-06</td><td class="">5.001e-07</td><td class="">5.001e-06</td><td class="">5.001e-07</td><td class="">~:0(&lt;built-in method numpy.asanyarray&gt;)</td></tr><tr role="row" class="even"><td class="">20</td><td class="sorting_1">4.792e-06</td><td class="">2.396e-07</td><td class="">4.792e-06</td><td class="">2.396e-07</td><td class="">~:0(&lt;method 'items' of 'dict' objects&gt;)</td></tr><tr role="row" class="odd"><td class="">10</td><td class="sorting_1">3.335e-06</td><td class="">3.335e-07</td><td class="">3.335e-06</td><td class="">3.335e-07</td><td class="">fromnumeric.py:3380(_mean_dispatcher)</td></tr><tr role="row" class="even"><td class="">2</td><td class="sorting_1">2.583e-06</td><td class="">1.292e-06</td><td class="">2.583e-06</td><td class="">1.292e-06</td><td class="">~:0(&lt;built-in method numpy.zeros&gt;)</td></tr><tr role="row" class="odd"><td>1</td><td class="sorting_1">2e-06</td><td>2e-06</td><td>2e-06</td><td>2e-06</td><td>~:0(&lt;method 'disable' of '_lsprof.Profiler' objects&gt;)</td></tr></tbody></table><div class="dataTables_info" id="pstats-table_info" role="status" aria-live="polite">Showing 1 to 25 of 25 entries</div></div>
+</div>
+<!-- footer -->
+<footer class="sv-footer">
+<a class="footer-link" href="https://jiffyclub.github.io/snakeviz/">SnakeViz Docs</a>
+</footer>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Vendor JS -->
+<script src="./profiling_output_prof_view_files/jquery-3.2.1.min.js"></script>
+<script src="./profiling_output_prof_view_files/d3.v3.min.js"></script>
+<script src="./profiling_output_prof_view_files/jquery.dataTables.min.js"></script>
+<script src="./profiling_output_prof_view_files/lodash.min.js"></script>
+<script src="./profiling_output_prof_view_files/immutable.min.js"></script>
+<!-- SnakeViz JS -->
+<script>
+// Make the stats table
+var table_data = [[['20', 20], '4.792e-06', '2.396e-07', '4.792e-06', '2.396e-07', '~:0(&lt;method &#x27;items&#x27; of &#x27;dict&#x27; objects&gt;)', "~:0(<method 'items' of 'dict' objects>)"], [['10', 10], '6.624e-06', '6.624e-07', '6.624e-06', '6.624e-07', '~:0(&lt;built-in method builtins.hasattr&gt;)', '~:0(<built-in method builtins.hasattr>)'], [['30', 30], '1.087e-05', '3.625e-07', '1.087e-05', '3.625e-07', '~:0(&lt;built-in method builtins.isinstance&gt;)', '~:0(<built-in method builtins.isinstance>)'], [['20', 20], '5.25e-06', '2.625e-07', '5.25e-06', '2.625e-07', '~:0(&lt;built-in method builtins.issubclass&gt;)', '~:0(<built-in method builtins.issubclass>)'], [['10', 10], '0.0004366', '4.366e-05', '0.001738', '0.0001738', 'cProfile_advanced.py:9(relu_deriv)', '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)'], [['10', 10], '0.001419', '0.0001419', '0.001419', '0.0001419', 'cProfile_advanced.py:6(relu)', '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:6(relu)'], [['10', 10], '0.0001037', '1.037e-05', '0.000468', '4.68e-05', 'cProfile_advanced.py:13(mse)', '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)'], [['10', 10], '5.129e-05', '5.129e-06', '0.000361', '3.61e-05', 'fromnumeric.py:3385(mean)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)'], [['10', 10], '0.0001122', '1.122e-05', '0.0001122', '1.122e-05', 'cProfile_advanced.py:16(mse_deriv)', '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:16(mse_deriv)'], [['20', 20], '7.85e-05', '3.925e-06', '0.000641', '3.205e-05', 'fromnumeric.py:71(_wrapreduction)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)'], [['1', 1], '2e-06', '2e-06', '2e-06', '2e-06', '~:0(&lt;method &#x27;disable&#x27; of &#x27;_lsprof.Profiler&#x27; objects&gt;)', "~:0(<method 'disable' of '_lsprof.Profiler' objects>)"], [['20', 20], '5.475e-05', '2.738e-06', '0.0007013', '3.506e-05', 'fromnumeric.py:2177(sum)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)'], [['20', 20], '7.209e-06', '3.605e-07', '7.209e-06', '3.605e-07', 'fromnumeric.py:2172(_sum_dispatcher)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)'], [['20', 20], '3.238e-05', '1.619e-06', '3.238e-05', '1.619e-06', 'fromnumeric.py:72(&lt;dictcomp&gt;)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)'], [['10', 10], '3.335e-06', '3.335e-07', '3.335e-06', '3.335e-07', 'fromnumeric.py:3380(_mean_dispatcher)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)'], [['10', 10], '0.001302', '0.0001302', '0.001302', '0.0001302', '~:0(&lt;method &#x27;astype&#x27; of &#x27;numpy.ndarray&#x27; objects&gt;)', "~:0(<method 'astype' of 'numpy.ndarray' objects>)"], [['10', 10], '5.001e-06', '5.001e-07', '5.001e-06', '5.001e-07', '~:0(&lt;built-in method numpy.asanyarray&gt;)', '~:0(<built-in method numpy.asanyarray>)'], [['2', 2], '2.583e-06', '1.292e-06', '2.583e-06', '1.292e-06', '~:0(&lt;built-in method numpy.zeros&gt;)', '~:0(<built-in method numpy.zeros>)'], [['20', 20], '8.418e-06', '4.209e-07', '8.418e-06', '4.209e-07', '~:0(&lt;built-in method numpy.core._multiarray_umath.normalize_axis_index&gt;)', '~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)'], [['30', 30], '0.0005943', '1.981e-05', '0.0005943', '1.981e-05', '~:0(&lt;method &#x27;reduce&#x27; of &#x27;numpy.ufunc&#x27; objects&gt;)', "~:0(<method 'reduce' of 'numpy.ufunc' objects>)"], [['1', 1], '2.113e-05', '2.113e-05', '2.113e-05', '2.113e-05', '~:0(&lt;numpy.random.mtrand.seed&gt;)', '~:0(<numpy.random.mtrand.seed>)'], [['4', 4], '0.0004416', '0.0001104', '0.0004416', '0.0001104', '~:0(&lt;method &#x27;randn&#x27; of &#x27;numpy.random.mtrand.RandomState&#x27; objects&gt;)', "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)"], [['10', 10], '0.0001024', '1.024e-05', '0.0001108', '1.108e-05', '_methods.py:67(_count_reduce_items)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)'], [['10', 10], '0.0001077', '1.077e-05', '0.0003098', '3.098e-05', '_methods.py:101(_mean)', '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)'], [['1', 1], '0.01103', '0.01103', '0.01595', '0.01595', 'cProfile_advanced.py:20(train_numpy_nn)', '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)']];
+$(document).ready(function() {
+var table = $('#pstats-table').dataTable({
+'data': table_data,
+'columns': [
+// Note: columns are also defined in #pstats-table in HTML above,
+// this list must line up with that.
+{'type': 'num', 'searchable': 'false',
+'data': {
+'_': function (row) {return row[0][0];},
+'sort': function (row) {return row[0][1]}
+}},
+{'type': 'num', 'searchable': 'false'},
+{'type': 'num', 'searchable': 'false'},
+{'type': 'num', 'searchable': 'false'},
+{'type': 'num', 'searchable': 'false'},
+{}
+],
+'order': [1, 'desc'],
+'paging': false
+}).api();
+$('#pstats-table tbody').on('click', 'tr', function() {
+var name = table.row(this).data()[6];
+sv_root_func_name = name;
+sv_draw_vis(name);
+sv_call_stack = [name];
+sv_update_call_stack_list();
+$('#resetbutton-zoom').prop('disabled', true);
+$('#resetbutton-root').prop('disabled', false);
+}).on('mouseenter', 'tr', function () {
+$(this).children('td').addClass('data-table-hover');
+}).on('mouseleave', 'tr', function () {
+$(this).children('td').removeClass('data-table-hover');
+});
+});
+</script>
+<!-- Web worker code for generating D3 JSON in a separate thread -->
+<script id="hierarchy-worker" type="javascript/worker">
+// This will all go into a web worker that will be used to generate
+// the visualization JSON while leaving the rest of the app responsive.
+//
+// We put this here instead of in a separate JS file so that the worker
+// can be stopped and restarted without loading the code from the server,
+// and so that the stats data can be embedded in the worker.
+var stats = {"~:0(<method 'items' of 'dict' objects>)": {'children': {}, 'stats': [20, 20, 4.792e-06, 4.792e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 4.792e-06, 4.792e-06]}, 'display_name': "~:0(<method 'items' of 'dict' objects>)"}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': {'children': {"~:0(<method 'items' of 'dict' objects>)": [20, 20, 4.792e-06, 4.792e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)': [20, 20, 3.2375e-05, 3.2375e-05], "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": [20, 20, 0.00052529, 0.00052529]}, 'stats': [20, 20, 7.850000000000001e-05, 0.000640957], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 7.850000000000001e-05, 0.000640957]}, 'display_name': 'fromnumeric.py:71(_wrapreduction)'}, '~:0(<built-in method builtins.hasattr>)': {'children': {}, 'stats': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06]}, 'display_name': '~:0(<built-in method builtins.hasattr>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': {'children': {'~:0(<built-in method builtins.hasattr>)': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06], '~:0(<built-in method builtins.isinstance>)': [10, 10, 5.332e-06, 5.332e-06], '~:0(<built-in method builtins.issubclass>)': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06], '~:0(<built-in method numpy.asanyarray>)': [10, 10, 5.001e-06, 5.001e-06], "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": [10, 10, 6.9002e-05, 6.9002e-05], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': [10, 10, 0.000102374, 0.000110792]}, 'stats': [10, 10, 0.000107749, 0.00030975], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': [10, 10, 0.000107749, 0.00030975]}, 'display_name': '_methods.py:101(_mean)'}, '~:0(<built-in method builtins.isinstance>)': {'children': {}, 'stats': [30, 30, 1.0874000000000001e-05, 1.0874000000000001e-05], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 5.5420000000000005e-06, 5.5420000000000005e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 5.332e-06, 5.332e-06]}, 'display_name': '~:0(<built-in method builtins.isinstance>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': {'children': {'~:0(<built-in method builtins.isinstance>)': [20, 20, 5.5420000000000005e-06, 5.5420000000000005e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 7.850000000000001e-05, 0.000640957]}, 'stats': [20, 20, 5.4751000000000005e-05, 0.00070125], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [20, 20, 5.4751000000000005e-05, 0.00070125]}, 'display_name': 'fromnumeric.py:2177(sum)'}, '~:0(<built-in method builtins.issubclass>)': {'children': {}, 'stats': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06]}, 'display_name': '~:0(<built-in method builtins.issubclass>)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': {'children': {"~:0(<method 'astype' of 'numpy.ndarray' objects>)": [10, 10, 0.001301833, 0.001301833]}, 'stats': [10, 10, 0.00043658300000000004, 0.001738416], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.00043658300000000004, 0.001738416]}, 'display_name': 'cProfile_advanced.py:9(relu_deriv)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': {'children': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': [10, 10, 0.00043658300000000004, 0.001738416], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:6(relu)': [10, 10, 0.001419249, 0.001419249], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 0.000103666, 0.000468042], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:16(mse_deriv)': [10, 10, 0.000112164, 0.000112164], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 5.4751000000000005e-05, 0.00070125], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06], '~:0(<built-in method numpy.zeros>)': [2, 2, 2.583e-06, 2.583e-06], '~:0(<numpy.random.mtrand.seed>)': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05], "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)": [4, 4, 0.00044162600000000003, 0.00044162600000000003]}, 'stats': [1, 1, 0.011034295000000001, 0.015945959000000003], 'callers': {}, 'display_name': 'cProfile_advanced.py:20(train_numpy_nn)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:6(relu)': {'children': {}, 'stats': [10, 10, 0.001419249, 0.001419249], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.001419249, 0.001419249]}, 'display_name': 'cProfile_advanced.py:6(relu)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': {'children': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': [10, 10, 5.1291e-05, 0.00036104100000000004], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06]}, 'stats': [10, 10, 0.000103666, 0.000468042], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.000103666, 0.000468042]}, 'display_name': 'cProfile_advanced.py:13(mse)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': {'children': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 0.000107749, 0.00030975]}, 'stats': [10, 10, 5.1291e-05, 0.00036104100000000004], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 5.1291e-05, 0.00036104100000000004]}, 'display_name': 'fromnumeric.py:3385(mean)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:16(mse_deriv)': {'children': {}, 'stats': [10, 10, 0.000112164, 0.000112164], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.000112164, 0.000112164]}, 'display_name': 'cProfile_advanced.py:16(mse_deriv)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)': {'children': {}, 'stats': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06]}, 'display_name': 'fromnumeric.py:2172(_sum_dispatcher)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)': {'children': {}, 'stats': [20, 20, 3.2375e-05, 3.2375e-05], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 3.2375e-05, 3.2375e-05]}, 'display_name': 'fromnumeric.py:72(<dictcomp>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)': {'children': {}, 'stats': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06]}, 'display_name': 'fromnumeric.py:3380(_mean_dispatcher)'}, "~:0(<method 'astype' of 'numpy.ndarray' objects>)": {'children': {}, 'stats': [10, 10, 0.001301833, 0.001301833], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': [10, 10, 0.001301833, 0.001301833]}, 'display_name': "~:0(<method 'astype' of 'numpy.ndarray' objects>)"}, '~:0(<built-in method numpy.asanyarray>)': {'children': {}, 'stats': [10, 10, 5.001e-06, 5.001e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 5.001e-06, 5.001e-06]}, 'display_name': '~:0(<built-in method numpy.asanyarray>)'}, '~:0(<built-in method numpy.zeros>)': {'children': {}, 'stats': [2, 2, 2.583e-06, 2.583e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [2, 2, 2.583e-06, 2.583e-06]}, 'display_name': '~:0(<built-in method numpy.zeros>)'}, '~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)': {'children': {}, 'stats': [20, 20, 8.418e-06, 8.418e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': [20, 20, 8.418e-06, 8.418e-06]}, 'display_name': '~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': {'children': {'~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)': [20, 20, 8.418e-06, 8.418e-06]}, 'stats': [10, 10, 0.000102374, 0.000110792], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 0.000102374, 0.000110792]}, 'display_name': '_methods.py:67(_count_reduce_items)'}, "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": {'children': {}, 'stats': [30, 30, 0.0005942920000000001, 0.0005942920000000001], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 0.00052529, 0.00052529], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 6.9002e-05, 6.9002e-05]}, 'display_name': "~:0(<method 'reduce' of 'numpy.ufunc' objects>)"}, '~:0(<numpy.random.mtrand.seed>)': {'children': {}, 'stats': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05]}, 'display_name': '~:0(<numpy.random.mtrand.seed>)'}, "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)": {'children': {}, 'stats': [4, 4, 0.00044162600000000003, 0.00044162600000000003], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [4, 4, 0.00044162600000000003, 0.00044162600000000003]}, 'display_name': "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)"}};
+function sv_build_hierarchy(
+node_name, depth, max_depth, cutoff, node_time, parent_name, call_stack) {
+// track visited functions so we can avoid infinitely displaying
+// instances of recursion
+if (_.isUndefined(call_stack)) {
+var call_stack = Immutable.Set([node_name])
+} else {
+var call_stack = call_stack.add(node_name);
+};
+var data = {
+name: node_name,
+display_name: stats[node_name]['display_name'],
+time: node_time,
+cumulative: stats[node_name]['stats'][3],
+parent_name: parent_name
+};
+if (depth < max_depth && !_.isEmpty(stats[node_name]['children'])) {
+child_names = {};
+for (var child_name in stats[node_name]['children']) {
+// Cut off children that have already been visited (recursion)
+if (!call_stack.contains(child_name)) {
+child_names[child_name] = stats[node_name]['children'][child_name];
+}
+}
+// Normalize the child times.
+// Unfortunately, stats[child_name]['callers'][node_name][3] doesn't
+// give us the time that child spend under node in this instance, but
+// in all instances across the call tree. Yikes!
+// This may lead to unexpected behavior, e.g., the child times add up
+// to more than the node time. A normalization is necessary.
+var child_times = {};
+var total_children_time = 0.0;
+for (var child_name in child_names) {
+child_times[child_name] = stats[child_name]['callers'][node_name][3];
+total_children_time += child_times[child_name];
+}
+if (total_children_time > node_time) {
+for (var child_name in child_names) {
+child_times[child_name] *= (node_time / total_children_time);
+}
+}
+data['children'] = [];
+// recurse
+for (var child_name in child_names) {
+if (child_times[child_name]/node_time > cutoff) {
+data['children'].push(
+sv_build_hierarchy(
+child_name, depth+1, max_depth, cutoff,
+child_times[child_name], node_name, call_stack
+));
+}
+}
+// D3, the plotting framework, only accounts for times in the leaf
+// nodes. Hence, if the node_time exceeds the total time in its
+// children, we need to add another child node to account for the the
+// time spent in node itself.
+if (total_children_time < node_time) {
+data['children'].push({
+name: node_name,
+display_name: data['display_name'],
+parent_name: data['parent_name'],
+cumulative: stats[node_name]['stats'][3],
+time: node_time - total_children_time
+});
+}
+}
+return data;
+}
+self.onmessage = function (event) {
+// Try loading JS from CDN in case snakeviz server is off
+try {
+importScripts(
+"https://cdnjs.cloudflare.com/ajax/libs/immutable/3.8.1/immutable.min.js",
+"https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js");
+}
+// If the user is offline try loading from the SnakeViz server
+catch (e) {
+try {
+importScripts(
+event.data['url'] + "/static/vendor/immutable.min.js",
+event.data['url'] + "/static/vendor/lodash.min.js");
+}
+catch (e) {
+throw 'Could not load JS libraries in worker.';
+}
+}
+var depth = 0;
+var max_depth = event.data['depth'];
+var cutoff = event.data['cutoff'];
+var node_name = event.data['name'];
+var parent_name = event.data['parent_name'];
+var node_time = stats[node_name]['stats'][3];
+self.postMessage(JSON.stringify(
+sv_build_hierarchy(
+node_name, depth, max_depth, cutoff, node_time, parent_name
+)));
+};
+</script>
+<!-- Load SnakeViz JS Files -->
+<script src="./profiling_output_prof_view_files/snakeviz.js"></script>
+<script src="./profiling_output_prof_view_files/drawsvg.js"></script>
+<!-- Do initial setup stuff -->
+<script>
+// Initialize data
+$(document).ready(_.defer(function () {
+var profile_data = {"~:0(<method 'items' of 'dict' objects>)": {'children': {}, 'stats': [20, 20, 4.792e-06, 4.792e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 4.792e-06, 4.792e-06]}, 'display_name': "~:0(<method 'items' of 'dict' objects>)"}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': {'children': {"~:0(<method 'items' of 'dict' objects>)": [20, 20, 4.792e-06, 4.792e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)': [20, 20, 3.2375e-05, 3.2375e-05], "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": [20, 20, 0.00052529, 0.00052529]}, 'stats': [20, 20, 7.850000000000001e-05, 0.000640957], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 7.850000000000001e-05, 0.000640957]}, 'display_name': 'fromnumeric.py:71(_wrapreduction)'}, '~:0(<built-in method builtins.hasattr>)': {'children': {}, 'stats': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06]}, 'display_name': '~:0(<built-in method builtins.hasattr>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': {'children': {'~:0(<built-in method builtins.hasattr>)': [10, 10, 6.6240000000000004e-06, 6.6240000000000004e-06], '~:0(<built-in method builtins.isinstance>)': [10, 10, 5.332e-06, 5.332e-06], '~:0(<built-in method builtins.issubclass>)': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06], '~:0(<built-in method numpy.asanyarray>)': [10, 10, 5.001e-06, 5.001e-06], "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": [10, 10, 6.9002e-05, 6.9002e-05], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': [10, 10, 0.000102374, 0.000110792]}, 'stats': [10, 10, 0.000107749, 0.00030975], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': [10, 10, 0.000107749, 0.00030975]}, 'display_name': '_methods.py:101(_mean)'}, '~:0(<built-in method builtins.isinstance>)': {'children': {}, 'stats': [30, 30, 1.0874000000000001e-05, 1.0874000000000001e-05], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 5.5420000000000005e-06, 5.5420000000000005e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 5.332e-06, 5.332e-06]}, 'display_name': '~:0(<built-in method builtins.isinstance>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': {'children': {'~:0(<built-in method builtins.isinstance>)': [20, 20, 5.5420000000000005e-06, 5.5420000000000005e-06], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 7.850000000000001e-05, 0.000640957]}, 'stats': [20, 20, 5.4751000000000005e-05, 0.00070125], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [20, 20, 5.4751000000000005e-05, 0.00070125]}, 'display_name': 'fromnumeric.py:2177(sum)'}, '~:0(<built-in method builtins.issubclass>)': {'children': {}, 'stats': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [20, 20, 5.2500000000000006e-06, 5.2500000000000006e-06]}, 'display_name': '~:0(<built-in method builtins.issubclass>)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': {'children': {"~:0(<method 'astype' of 'numpy.ndarray' objects>)": [10, 10, 0.001301833, 0.001301833]}, 'stats': [10, 10, 0.00043658300000000004, 0.001738416], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.00043658300000000004, 0.001738416]}, 'display_name': 'cProfile_advanced.py:9(relu_deriv)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': {'children': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': [10, 10, 0.00043658300000000004, 0.001738416], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:6(relu)': [10, 10, 0.001419249, 0.001419249], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 0.000103666, 0.000468042], '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:16(mse_deriv)': [10, 10, 0.000112164, 0.000112164], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2177(sum)': [20, 20, 5.4751000000000005e-05, 0.00070125], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06], '~:0(<built-in method numpy.zeros>)': [2, 2, 2.583e-06, 2.583e-06], '~:0(<numpy.random.mtrand.seed>)': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05], "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)": [4, 4, 0.00044162600000000003, 0.00044162600000000003]}, 'stats': [1, 1, 0.011034295000000001, 0.015945959000000003], 'callers': {}, 'display_name': 'cProfile_advanced.py:20(train_numpy_nn)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:6(relu)': {'children': {}, 'stats': [10, 10, 0.001419249, 0.001419249], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.001419249, 0.001419249]}, 'display_name': 'cProfile_advanced.py:6(relu)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': {'children': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': [10, 10, 5.1291e-05, 0.00036104100000000004], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06]}, 'stats': [10, 10, 0.000103666, 0.000468042], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.000103666, 0.000468042]}, 'display_name': 'cProfile_advanced.py:13(mse)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3385(mean)': {'children': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 0.000107749, 0.00030975]}, 'stats': [10, 10, 5.1291e-05, 0.00036104100000000004], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 5.1291e-05, 0.00036104100000000004]}, 'display_name': 'fromnumeric.py:3385(mean)'}, '/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:16(mse_deriv)': {'children': {}, 'stats': [10, 10, 0.000112164, 0.000112164], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [10, 10, 0.000112164, 0.000112164]}, 'display_name': 'cProfile_advanced.py:16(mse_deriv)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:2172(_sum_dispatcher)': {'children': {}, 'stats': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [20, 20, 7.209000000000001e-06, 7.209000000000001e-06]}, 'display_name': 'fromnumeric.py:2172(_sum_dispatcher)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:72(<dictcomp>)': {'children': {}, 'stats': [20, 20, 3.2375e-05, 3.2375e-05], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 3.2375e-05, 3.2375e-05]}, 'display_name': 'fromnumeric.py:72(<dictcomp>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:3380(_mean_dispatcher)': {'children': {}, 'stats': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:13(mse)': [10, 10, 3.3350000000000003e-06, 3.3350000000000003e-06]}, 'display_name': 'fromnumeric.py:3380(_mean_dispatcher)'}, "~:0(<method 'astype' of 'numpy.ndarray' objects>)": {'children': {}, 'stats': [10, 10, 0.001301833, 0.001301833], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:9(relu_deriv)': [10, 10, 0.001301833, 0.001301833]}, 'display_name': "~:0(<method 'astype' of 'numpy.ndarray' objects>)"}, '~:0(<built-in method numpy.asanyarray>)': {'children': {}, 'stats': [10, 10, 5.001e-06, 5.001e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 5.001e-06, 5.001e-06]}, 'display_name': '~:0(<built-in method numpy.asanyarray>)'}, '~:0(<built-in method numpy.zeros>)': {'children': {}, 'stats': [2, 2, 2.583e-06, 2.583e-06], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [2, 2, 2.583e-06, 2.583e-06]}, 'display_name': '~:0(<built-in method numpy.zeros>)'}, '~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)': {'children': {}, 'stats': [20, 20, 8.418e-06, 8.418e-06], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': [20, 20, 8.418e-06, 8.418e-06]}, 'display_name': '~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)'}, '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:67(_count_reduce_items)': {'children': {'~:0(<built-in method numpy.core._multiarray_umath.normalize_axis_index>)': [20, 20, 8.418e-06, 8.418e-06]}, 'stats': [10, 10, 0.000102374, 0.000110792], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 0.000102374, 0.000110792]}, 'display_name': '_methods.py:67(_count_reduce_items)'}, "~:0(<method 'reduce' of 'numpy.ufunc' objects>)": {'children': {}, 'stats': [30, 30, 0.0005942920000000001, 0.0005942920000000001], 'callers': {'/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/fromnumeric.py:71(_wrapreduction)': [20, 20, 0.00052529, 0.00052529], '/Users/leonardoplacidi/opt/anaconda3/envs/ApparentlyRandom/lib/python3.11/site-packages/numpy/core/_methods.py:101(_mean)': [10, 10, 6.9002e-05, 6.9002e-05]}, 'display_name': "~:0(<method 'reduce' of 'numpy.ufunc' objects>)"}, '~:0(<numpy.random.mtrand.seed>)': {'children': {}, 'stats': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [1, 1, 2.1125000000000002e-05, 2.1125000000000002e-05]}, 'display_name': '~:0(<numpy.random.mtrand.seed>)'}, "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)": {'children': {}, 'stats': [4, 4, 0.00044162600000000003, 0.00044162600000000003], 'callers': {'/Users/leonardoplacidi/Desktop/LOCALDEVELOPMENT/ApparentlyRandomCodes/HPC_python/cProfile_advanced.py:20(train_numpy_nn)': [4, 4, 0.00044162600000000003, 0.00044162600000000003]}, 'display_name': "~:0(<method 'randn' of 'numpy.random.mtrand.RandomState' objects>)"}};
+sv_json_cache = {};
+sv_worker = sv_make_worker();
+sv_root_func_name = sv_find_root(profile_data);
+sv_root_func_name__cached = sv_root_func_name;
+sv_call_stack = [sv_root_func_name];
+sv_total_time = profile_data[sv_root_func_name]['stats'][3];
+}));
+// Initialize the call stack button
+$(document).ready(_.defer(function () {
+sv_update_call_stack_list();
+sv_call_stack_btn_for_show();
+}));
+// Draw the visualization
+$(document).ready(_.defer(function () {
+sv_draw_vis(sv_root_func_name);
+}));
+</script>
+
+
+</body></html>
