@@ -1,3 +1,12 @@
+# Created by LP
+# Date: 2025-03-22
+# Trade only the money you can't afford to lose
+# Then go back to the mine
+# And try again.
+# This was coded with love <3
+
+#kernprof -l -v ~/Line_profiler_example.py
+
 import cProfile
 import numpy as np
 import os
