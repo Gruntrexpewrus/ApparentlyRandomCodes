@@ -1,4 +1,5 @@
 #conda env export > myenv.yml
+#conda env create -f myenv.yml
 name: ApparentlyRandom
 channels:
   - defaults
